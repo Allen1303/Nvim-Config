@@ -1,12 +1,16 @@
 -- File: ~/.config/nvim/init.lua
 
 --[=[
-  WHAT: This is the bootstrap section for the lazy.nvim plugin manager.
-  WHY:  It ensures that lazy.nvim is automatically installed if it's missing.
-        This makes your configuration completely self-contained and portable.
-        Anyone (including you on a new machine) can clone your config,
-        run `nvim`, and it will set itself up.
+  WHAT: These are fundamental editor options.
+  WHY:  They control basic features like line numbers, tabs vs. spaces, and
+        indentation rules. Setting these makes the editing experience more
+        predictable and aligned with modern coding standards.
 --]=]
-local lazypath = vim.fn.stdpath("data") .."/lazy/lazy.nvim"
+vim.opt.number = true         -- Show line numbers
+vim.opt.relativenumber = true -- Show relative line numbers for easier jumping
+vim.opt.tabstop = 2            -- How many spaces a <Tab> character is worth
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2        -- How many spaces to use for auto-indentation
+vim.opt.expandtab = true      -- Use spaces instead of actual tab characters
+vim.opt.smartindent = true    -- Automatically inserts indentation in new lines
 
--- plugin setup coming soon
