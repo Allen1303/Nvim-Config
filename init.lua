@@ -1,2 +1,2 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+HEAD
+d811a0045788a4d14eb9de75479bd99de85df77f
